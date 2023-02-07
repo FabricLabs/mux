@@ -19,5 +19,23 @@ describe('@fabric/mux', function () {
     it('implements stop()', function () {
       assert.equal(Mux.prototype.stop instanceof Function, true);
     });
+
+    it('implements commit()', function () {
+      assert.equal(Mux.prototype.commit instanceof Function, true);
+    });
+
+    it('can start and stop', function (done) {
+      async function test () {
+        const mux = new Mux();
+
+        await mux.start();
+        await mux.stop();
+
+        assert.equal(mux.state.status, 'STOPPED');
+        done();
+      }
+
+      test();
+    });
   });
 });

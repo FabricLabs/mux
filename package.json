@@ -4,6 +4,7 @@
   "description": "Collaborative multimedia editing software",
   "main": "services/mux.js",
   "scripts": {
+    "start": "node scripts/node.js",
     "test": "mocha tests"
   },
   "repository": {
