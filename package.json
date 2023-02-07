@@ -1,0 +1,32 @@
+{
+  "name": "@fabric/mux",
+  "version": "0.1.0-dev",
+  "description": "Collaborative multimedia editing software",
+  "main": "services/mux.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabricLabs/mux.git"
+  },
+  "keywords": [
+    "multimedia",
+    "fabric",
+    "editing",
+    "video",
+    "audio"
+  ],
+  "author": "Fabric Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FabricLabs/mux/issues"
+  },
+  "homepage": "https://github.com/FabricLabs/mux#readme",
+  "dependencies": {
+    "@fabric/core": "github:FabricLabs/fabric#feature/v0.1.0-RC1"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
